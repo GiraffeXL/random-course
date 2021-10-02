@@ -1,0 +1,200 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 16px;
+}
+body {
+    background-color: #F6F6F4;
+    box-sizing: border-box;
+    margin: 0;
+}
+nav ul {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-position: inside;
+    padding-left: 0;
+}
+nav ul li {
+    list-style-type: none;
+    margin: 10px 50px;
+    font-size: 1.2rem;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Alfa Slab One', cursive;
+    color: #c7752d;
+}
+    nav ul li:hover {
+        color: grey;
+    }
+
+    @media (max-width: 600px) {
+        nav ul {
+            display: flex;
+            flex-direction: column;
+        }
+        nav ul li {
+            margin: 5px 10px;
+        }
+    }
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Alfa Slab One', cursive;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+    @media (max-width: 1199.98px) {
+        h1 {
+            font-size: 2.5rem;
+        }
+    }
+
+    @media (max-width: 991.98px) {
+        h1 {
+            font-size: 2.5rem;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        h1 {
+            font-size: 2rem;
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        h1 {
+            font-size: 2rem; /*for some reason the title isn't wrapping when u shrink the window*/
+        }
+    }
+
+.price-toggle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+    .toggle {
+        background-color: #D8E2DC;
+        height: 50px;
+        width: 200px;
+        border-radius: 10px;
+        border: none;
+        margin: 10px;
+        font-size: 1rem;
+        font-family: 'Alfa Slab One', cursive;
+        color: grey;
+    }
+
+    .toggle:hover {
+        background-color:#c7752d;
+        color: white;
+    }
+
+    @media (max-width: 575.98px) {
+        .toggle {
+            width: 150px;
+        }
+    }
+
+/* .pricing-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+    .pricing-panel {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 25px;
+        /* height: 50vh;
+        align-items: center; */
+    }
+
+    @media (max-width: 991.98px) {
+        .pricing-panel {
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+            flex-wrap: wrap;
+            /* flex-grow: 1; */
+        }
+    } 
+    
+    @media (max-width:575.98px) {
+        .pricing-panel {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 1;
+        }
+    }
+
+    .pricing-plan {
+        padding: 20px;
+        margin: 10px;
+        border: .7px solid grey;
+        border-radius: 10px;
+        background-color: #F3DFCD;
+        width: 250px;
+        font-family: 'Alfa Slab One', cursive;
+        display: flex;
+        flex-direction: column; /*remember when the direction is column the vertical axis is the main axis*/
+        justify-content: flex-start;
+    }
+
+    @media (max-width:600px) {
+        .pricing-plan {
+            width: 300px;
+        }
+    }
+
+        .pricing-plan ul {
+            color: grey;
+        }
+
+        .plan-tier {
+            margin: 10px;
+            font-size: 1.7rem;
+            text-align: center;
+        }
+
+        .plan-title {
+            margin: 10px;
+            font-size: 1.3rem;
+            text-align: center;
+            color: #c7752d;
+        }
+
+        .cost {
+            text-align: center;
+            border-top: 1px solid #c7752d;
+            padding: 20px;
+        }
+
+        .cta-1 {
+            background-color: #D8E2DC;
+            padding: 10px 0;
+            text-decoration: none;
+            border: none;
+            border-radius: 10px;
+            font-family: 'Alfa Slab One', cursive;
+            color: grey;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+            .cta-1:hover {
+                background-color: #c7752d;
+                color: white;
+            }
+
+
+
+
